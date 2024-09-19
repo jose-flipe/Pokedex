@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="aula2.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="inputPokemon" placeholder="Nome do Pokémon ou ID">
+        <button onclick="procurarPokemon()">Buscar</button>
+        
+        <div class="info-pokemon">
+            <img id="imgPokemon">
+            <h2 id="exibirNomePokemon"></h2>
+            <p id="exibirTipoPokemon"></p>
+            <p id="exibirPesoPokemon"></p>
+            <p id="exibirAlturaPokemon"></p>
+        </div>
+
+        <div class="navegacao">
+            <button id="botaoVoltar" onclick="mudarPokemon(-1)" disabled>Voltar</button>
+            <button id="botaoProximo" onclick="mudarPokemon(1)" disabled>Avançar</button>
+        </div>
+    </div>
+    <script src="aula.js"></script>
+</body>
+</html>
